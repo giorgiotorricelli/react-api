@@ -6,15 +6,49 @@
   box-sizing: border-box;
 }
 
+:root {
+  --my-gap : 15px;
+}
+
+.my-card {
+  width: calc(100% / 3 - var(--my-gap) * 2 / 3);
+  border-radius: 15px;
+  background-image: linear-gradient(to bottom, rgb(44, 30, 146), rgb(0, 0, 72));
+  color: white;
+  text-align: center;
+}
+
 .img-wrapper {
   height: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 255, 0), rgba(145, 111, 0, 0.258));
+
 }
 
 .card-img {
+  border-radius: 5px;
   width: 70%;
   height: auto;
 }
 
 .cards-wrapper-bs-row {
   row-gap: 4rem;
+  column-gap: var(--my-gap);
 }
+
+.riconoscimenti {
+  color: rgb(230, 48, 48);
+
+}
+
+.awards {
+  color: rgb(237, 228, 54);
+}
+
+.sub-title {
+    text-shadow: 2px 2px 8px;
+}
+

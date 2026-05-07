@@ -20,7 +20,7 @@ function CardWrapper({ lista }) {
 
                     let stringKnownFor = '';
                     return <div className="my-card col-4" key={id}>
-                        <div className="text-center">
+                        <div className="text-center mt-3">
                             <h4>{name}</h4>
                             </div>
                         
@@ -31,11 +31,11 @@ function CardWrapper({ lista }) {
                         <p className="d-inline">{`   (${nationality})`}</p>
                         <p>{biography}</p>
                         <div className="riconoscimenti">
-                            <p><strong>Known For:</strong></p>
-                            <p>{known_for.join(', ')}</p>
+                            <p className="d-inline sub-title"><strong>Known For:</strong></p>
+                            <p className="m-0">{known_for.join(', ')}</p>
                         </div>
                         <div className="awards">
-                            <p><strong>Awards:</strong></p>
+                            <p className="d-inline sub-title"><strong>Awards:</strong></p>
                             <p>{awards.join(', ')}</p>
                         </div>
 
